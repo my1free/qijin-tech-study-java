@@ -11,3 +11,4 @@ logs
 mall/*/target/
 */target/*
 */target/**
+*/*.iml

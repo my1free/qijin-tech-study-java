@@ -1,0 +1,19 @@
+
+server:
+  port: 10003
+
+spring:
+  application:
+    name: eureka-consumer
+
+# logging config
+logging:
+  config: classpath:log4j2.xml
+
+eureka:
+  instance:
+    statusPageUrlPath: /actuator
+  client:
+    service-url:
+      defaultZone: http://localhost:10001/eureka/
+    healthcheck: true
