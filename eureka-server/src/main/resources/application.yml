@@ -1,0 +1,22 @@
+
+server:
+  port: 10001
+
+spring:
+  application:
+    name: eureka-server
+#  cloud:
+#    config:
+#      uri: http://localhost:8888
+
+
+# logging config
+logging:
+  config: classpath:log4j2.xml
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    register-with-eureka: false # 注册中心本身不注册到注册中心
+    fetch-registry: false #关闭检索服务
