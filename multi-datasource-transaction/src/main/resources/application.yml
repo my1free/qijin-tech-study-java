@@ -1,0 +1,18 @@
+server:
+  port: 9099
+spring:
+  datasource:
+    db1:
+      jdbc-url: jdbc:mysql://localhost:3306/multidb1?useUnicode=true&characterEncoding=utf-8
+      username: admin
+      password: Admin_@123
+      driver-class-name: com.mysql.jdbc.Driver
+    db2:
+      jdbc-url: jdbc:mysql://localhost:3306/multidb2?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC&useSSL=false
+      username: admin
+      password: Admin_@123
+      driver-class-name: com.mysql.jdbc.Driver
+
+logging:
+  level:
+    tech.qijin.study.transaction.mysql: DEBUG
