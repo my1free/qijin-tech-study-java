@@ -6,22 +6,20 @@ import java.util.LinkedList;
 import java.util.List;
 
 /**
- * [94. 二叉树的中序遍历](https://leetcode-cn.com/problems/binary-tree-inorder-traversal/) 🔥🔥
+ * [144. 二叉树的前序遍历](https://leetcode-cn.com/problems/binary-tree-preorder-traversal/) 🔥🔥
  */
-public class Solution94 {
-    public List<Integer> inorderTraversal(TreeNode root) {
+public class Solution144 {
+    public List<Integer> preorderTraversal(TreeNode root) {
         List<Integer> ans = new ArrayList<Integer>();
         if (root == null) return ans;
         Deque<TreeNode> stack = new LinkedList<TreeNode>();
         TreeNode tn = root;
-        while (tn != null || !stack.isEmpty()) {
-            while (tn != null) {
-                stack.push(tn);
-                tn = tn.left;
-            }
+        stack.push(tn);
+        while (!stack.isEmpty()) {
             tn = stack.pop();
             ans.add(tn.val);
-            tn = tn.right;
+            if (tn.right != null) stack.push(tn.right);
+            if (tn.left != null) stack.push(tn.left);
         }
         return ans;
     }
@@ -33,8 +31,8 @@ public class Solution94 {
         TreeNode t3 = new TreeNode(3);
         root.right = t2;
         t2.left = t3;
-        Solution94 solution94 = new Solution94();
-        for (Integer a : solution94.inorderTraversal(root)) {
+        Solution144 solution144 = new Solution144();
+        for (Integer a : solution144.preorderTraversal(root)) {
             System.out.println(a);
         }
     }
