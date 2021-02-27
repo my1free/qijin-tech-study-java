@@ -1,32 +1,19 @@
 package tech.qijin.study.quickstart;
 
 
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
 public class Main {
 
-	public static void main(String[] args) {
-		List<List<Integer>> listlist = new ArrayList<>();
-		listlist.add(new ArrayList<Integer>(){{
-			add(1);
-			add(1);
-			add(1);
-			add(1);
-			add(1);
-		}});
-		listlist.add(new ArrayList<Integer>(){{
-			add(2);
-			add(2);
-			add(2);
-			add(2);
-			add(2);
-		}});
-		listlist.add(new ArrayList<Integer>(){{
-			add(3);
-		}});
-		System.out.println(listlist.stream().collect(Collectors.summingLong(List::size)));
+	public static void mInteain(String[] args) {
+		BigDecimal value = new BigDecimal(2);
+		value.setScale(2, BigDecimal.ROUND_HALF_UP);
+		BigDecimal value2 = new BigDecimal(3);
+		value.setScale(2, BigDecimal.ROUND_HALF_UP);
+		System.out.println(value.divide(value2, 2, BigDecimal.ROUND_FLOOR));
 	}
 
 	private long a(long a){
