@@ -19,7 +19,7 @@ public class Solution7 {
         int ans = 0;
         while (!queue.isEmpty()){
             int value = queue.poll();
-            if ( (value > 0 && (Integer.MAX_VALUE - value) / 10 < ans) || (value < 0 && (Integer.MIN_VALUE - value) / 10 > ans)) {
+            if ((value > 0 && (Integer.MAX_VALUE - value) / 10 < ans) || (value < 0 && (Integer.MIN_VALUE - value) / 10 > ans)) {
                 System.out.println("sd");
                 return 0;
             }
