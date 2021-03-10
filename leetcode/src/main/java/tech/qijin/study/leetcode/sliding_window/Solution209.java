@@ -7,7 +7,7 @@ package tech.qijin.study.leetcode.sliding_window;
 public class Solution209 {
     public int minSubArrayLen(int target, int[] nums) {
         // 暴力法
-//        return bruteFore(target, nums);
+//        return bruteForce(target, nums);
         // 滑动窗口
         return slidingWindow(target, nums);
     }
@@ -29,7 +29,7 @@ public class Solution209 {
     }
 
     // 暴力解法，时间复杂度 O(N²)
-    private int bruteFore(int target, int[] nums) {
+    private int bruteForce(int target, int[] nums) {
         int ans = 0;
         for (int i = 0; i < nums.length; i++) {
             if (nums[i] == target) return 1;

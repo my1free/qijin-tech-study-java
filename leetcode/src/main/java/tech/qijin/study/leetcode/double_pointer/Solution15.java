@@ -1,4 +1,4 @@
-package tech.qijin.study.leetcode;
+package tech.qijin.study.leetcode.double_pointer;
 
 import java.util.*;
 
