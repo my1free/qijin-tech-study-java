@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>tech.qijin.study</groupId>
-	<artifactId>seata-order</artifactId>
+	<artifactId>seata-account</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>seata-order</name>
+	<name>seata-account</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>1.8</java.version>

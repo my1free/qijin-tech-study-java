@@ -11,11 +11,11 @@
 
     <context id="MySqlTables" targetRuntime="MyBatis3" defaultModelType="flat">
         <commentGenerator>
-            <property name="suppressAllComments" value="true"/>
+            <property name="OrderTblsuppressAllComments" value="true"/>
             <property name="suppressDate" value="true"/>
         </commentGenerator>
 
-        <jdbcConnection driverClass="${spring.datasource.driverClassName}"
+        <jdbcConnection driverClass="${spring.datasource.driver-class-name}"
                         connectionURL="${spring.datasource.url}"
                         userId="${spring.datasource.username}"
                         password="${spring.datasource.password}">
@@ -25,16 +25,16 @@
             <property name="forceBigDecimals" value="false"/>
         </javaTypeResolver>
 
-        <javaModelGenerator targetPackage="com.aviagames.messagecenter.db.model" targetProject="./messagecenter-db/src/main/java">
+        <javaModelGenerator targetPackage="tech.qijin.study.seata.order.db.model" targetProject="./src/main/java">
             <property name="enableSubPackages" value="true"/>
             <property name="trimStrings" value="true"/>
         </javaModelGenerator>
 
-        <sqlMapGenerator targetPackage="com.aviagames.messagecenter.db.xml" targetProject="./messagecenter-db/src/main/java">
+        <sqlMapGenerator targetPackage="tech.qijin.study.seata.order.db.xml" targetProject="./src/main/java">
             <property name="enableSubPackages" value="true"/>
         </sqlMapGenerator>
 
-        <javaClientGenerator type="ANNOTATEDMAPPER" targetPackage="com.aviagames.messagecenter.db.mapper" targetProject="./messagecenter-db/src/main/java">
+        <javaClientGenerator type="ANNOTATEDMAPPER" targetPackage="tech.qijin.study.seata.order.db.mapper" targetProject="./src/main/java">
             <property name="enableSubPackages" value="true"/>
         </javaClientGenerator>
         <table tableName="%">

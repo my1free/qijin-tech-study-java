@@ -1,4 +1,4 @@
-package tech.qijin.study.seata.order;
+package tech.qijin.study.seata.account;
 
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
 
 @SpringBootApplication
-@MapperScan("tech.qijin.study.seata.order.db")
+@MapperScan("tech.qijin.study.seata.account.db")
 public class Application {
 	@Bean
 	public RestTemplate restTemplate() {

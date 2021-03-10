@@ -25,16 +25,16 @@
             <property name="forceBigDecimals" value="false"/>
         </javaTypeResolver>
 
-        <javaModelGenerator targetPackage="tech.qijin.study.seata.order.db.model" targetProject="./src/main/java">
+        <javaModelGenerator targetPackage="tech.qijin.study.seata.storage.db.model" targetProject="./src/main/java">
             <property name="enableSubPackages" value="true"/>
             <property name="trimStrings" value="true"/>
         </javaModelGenerator>
 
-        <sqlMapGenerator targetPackage="tech.qijin.study.seata.order.db.xml" targetProject="./src/main/java">
+        <sqlMapGenerator targetPackage="tech.qijin.study.seata.storage.db.xml" targetProject="./src/main/java">
             <property name="enableSubPackages" value="true"/>
         </sqlMapGenerator>
 
-        <javaClientGenerator type="ANNOTATEDMAPPER" targetPackage="tech.qijin.study.seata.order.db.mapper" targetProject="./src/main/java">
+        <javaClientGenerator type="ANNOTATEDMAPPER" targetPackage="tech.qijin.study.seata.storage.db.mapper" targetProject="./src/main/java">
             <property name="enableSubPackages" value="true"/>
         </javaClientGenerator>
         <table tableName="%">

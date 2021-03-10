@@ -9,7 +9,7 @@ import tech.qijin.study.seata.storage.db.model.StorageTblExample;
 import java.util.List;
 
 @Service
-public class OrderService {
+public class StorageService {
     @Autowired
     private StorageTblMapper storageTblMapper;
 
